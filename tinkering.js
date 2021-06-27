@@ -1,7 +1,9 @@
-const smartGarbage = function (trash, bins) {
+const carPassing = function (cars, speed) {
   // Your code in here ...
-  bins[trash]++;
-  console.log(bins);
-  return bins;
+  let newObj = {
+    time: Date.now(),
+    speed: speed
+  };
+  cars.push(newObj);
+  return cars;
 }
-smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
