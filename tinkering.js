@@ -1,12 +1,7 @@
-for(let x = 100; x <= 200; x++){
-  if(x % 3 === 0 && x % 4 === 0){
-    console.log("LoopyLighthouse");
-  } else if(x % 3 === 0){
-    console.log("Loopy");
-  } else if(x % 4 === 0){
-    console.log("Lighthouse");
-  } else {
-    console.log(x);
-  }
-  
+const smartGarbage = function (trash, bins) {
+  // Your code in here ...
+  bins[trash]++;
+  console.log(bins);
+  return bins;
 }
+smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
